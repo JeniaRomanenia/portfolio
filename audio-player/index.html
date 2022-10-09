@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio-player</title>
+  <link rel="icon" href="./assets/favicon/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+        <div class="left">
+          <img class="img-track">
+          <div class="volume">
+            <p class="volume-show">90</p>
+            <i onclick="mute_sound()">
+              <svg class="icon-valume-up">
+                <use xlink:href="./assets/svg/sprite.svg#volume_up"></use>
+              </svg>
+            </i>
+            <input type="range" min="0" max="100" value="90" id="volume" onchange="volume_change()">
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="song-detail">
+            <p class="title"> title.mp3</p>
+            <p class="artist">Artist name</p>
+          </div>
+          <div class="middle">
+            <button class="btn pre" onclick="previous_song()">
+              <svg class="icon-pre">
+                <use xlink:href="./assets/svg/sprite.svg#pre"></use>
+              </svg>
+            </button>
+            <button class="btn play" onclick="justplay()">
+              <svg class="icon-play">
+                <use xlink:href="./assets/svg/sprite.svg#play"></use>
+              </svg>
+            </button>
+            <button class="btn next" onclick="next_song()">
+              <svg class="icon-next">
+                <use xlink:href="./assets/svg/sprite.svg#next"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="time">
+            <input type="range" min="0" max="100" value="0" id="time_slider" onchange="change_duration()">
+          </div>
+        </main>
+        <footer class="footer">
+          <a class="rss" href="https://github.com/JeniaRomanenia" title="Jenia Romanenia">2022 Jenia Romanenia</a>
+        </footer>
+        <script src="./index.js"></script>
+</body>
+</html>
