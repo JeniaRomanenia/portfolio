@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  place-items: center;
+  background: rgba(192, 192, 192, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  border-bottom: 5px solid orange;
+  width: 100%;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 25px 0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.search-box {
+  position: relative;
+  width: 350px;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1rem;
+  padding: 8px;
+  border-radius: 25px;
+  outline: none;
+  border: 1px solid lightgray;
+}
+
+input:focus {
+  box-shadow: 0 0 5px orange;
+  border: 1px solid orange;
+}
+
+.search-icon {
+  position: absolute;
+  top: 9%;
+  right: 14%;
+  transition: 1.5s;
+  cursor: pointer;
+}
+
+.close-icon {
+  position: absolute;
+  top: 9%;
+  right: 4%;
+  transition: 1.5s;
+  cursor: pointer;
+}
+
+svg {
+  width: 25px;
+  height: 25px;
+  fill: black;
+}
+
+svg:hover {
+  fill: orange;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo:hover {
+  color: orange;
+}
+
+main {
+  width: 100%;
+}
+
+.galery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.img {
+  width: 380px;
+  height: 200px;
+  margin-top: 15px;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 2px;
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+  border-top: 5px solid orange;
+  display: flex;
+  text-align: center;
+}
+
+.rss {
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+}
+
+.rs {
+  height: 50px;
+  width: 75px;
+  margin-left: 35px;
+  background-image: url(./assets/svg/rs_school_js.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.rs-icon {
+  width: 250px;
+  height: 50px;
+}
+
+@media (max-width: 768px) {
+  .img {
+    width: 100%;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  h2 {
+    padding: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .search-box {
+    width: 80%;
+    margin: auto;
+  }
+
+  input {
+    font-size: 0.7rem;
+  }
+}
