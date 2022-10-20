@@ -742,7 +742,7 @@ body.light-theme{
 
 .contact__info{
   display: grid;
-  gap: 1rem;
+  gap: 4rem;
 }
 
 .contact__card{
@@ -809,6 +809,10 @@ body.light-theme{
   padding: 1.5rem;
   border-radius: .75rem;
   z-index: 1;
+}
+
+._error {
+  border: 2px solid red;
 }
 
 .contact__form-tag{
@@ -945,6 +949,10 @@ body.light-theme{
     column-gap: .25rem;
     flex-wrap: wrap;
   }
+
+  .contact__info {
+    gap: 1rem;
+  }
 }
 
 /* For medium devices */
@@ -1008,7 +1016,7 @@ body.light-theme{
   }
 
   .contact__info{
-    grid-template-columns: 300px;
+    grid-template-columns: repeat(3, max-content);
     justify-content: center;
   }
 

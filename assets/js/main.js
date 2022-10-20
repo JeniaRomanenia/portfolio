@@ -1,3 +1,4 @@
+
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader(){
     const header = document.getElementById('header')
@@ -139,7 +140,7 @@ sr.reveal('.home__handle', {delay: 700})
 sr.reveal('.home__social, .home__scroll', {delay: 900, origin: 'bottom'})
 
 /*=================== translation===========================*/
-const i18Obj = {
+const i180bj = {
     'en': {
       'hello': 'Hello, I\'m',
       'name1': 'Jenia Romanenia',
@@ -203,11 +204,13 @@ const i18Obj = {
       'yoga': 'Yoga Teacher Website',
       'contact-subtitle': 'Get in touch',
       'contact-title': 'Talk to me',
+      'contact-phone': 'Phone',
       'write-me': 'Write me your project',
-      'name': 'Name',
-      'mail': 'Mail',
+      'name': 'Name*',
+      'mail': 'Mail*',
       'project': 'Project',
       'message': 'Send Message',
+      'hero-text': 'Сontact Мe',
       'jenia': 'Jenia',
       'about': 'About'
     },
@@ -275,11 +278,13 @@ const i18Obj = {
       'contact-subtitle': 'Связаться',
       'contact-title': 'Связаться со мной',
       'write-me': 'Напишите мне про свой проект',
-      'name': 'Имя',
-      'mail': 'Mail',
+      'name': 'Имя*',
+      'contact-phone': 'Телефон',
+      'mail': 'Mail*',
       'project': 'Проект',
       'message': 'Отправить сообщение',
       'jenia': 'Евгения',
+      'hero-text': 'Связаться со мной',
       'about': 'About'
     }
   }
@@ -287,9 +292,6 @@ const i18Obj = {
 
 let elem = document.querySelectorAll('[data-i18]');
 const btnLang = document.querySelector('.nav-lang');
-console.log(elem);
-console.log(btnLang)
-//onsole.log(i18Obj);
 
 btnLang.addEventListener('click', (event) => {
     if(event.target.classList.contains('lang')){
@@ -303,5 +305,6 @@ btnLang.addEventListener('click', (event) => {
 
 
   function getTranslate (l) {
-    elem.forEach(item => item.textContent = i18Obj[l][item.dataset.i18])
+    elem.forEach(item => item.textContent = i180bj[l][item.dataset.i18])
   }
+
