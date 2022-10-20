@@ -76,14 +76,8 @@ I am sure that my meticulousness, imaginative and analytical thinking will help 
 
 ## my Projects
 
-- **Shelter**: A simple and lightweight JavaScript data processing tool. [Live Demo](https://mywsq.github.io/processor)
-- **Scroom**: A smart library for cool scrolling effects, based on Intersection Observer. [Website](https://scroom.wsq.cool)
-- **Fast Raf**: Better requestAnimationFrame. [Live Demo](https://mywsq.github.io/fast-raf/example)
+- **Shelter**: RS Schools project [Website](https://jeniaromanenia.github.io/portfolio/shelter-website/)
+- **Skoroprazdnik.by**: Website for Event Party (WordPress) [Website](https://www.skoroprazdnik.by/)
+- **Tic-tac-toe**: tic-tac-toe game [Live Demo](https://jeniaromanenia.github.io/portfolio/tic-tac-toe/)
 
-:br
-:br
-:br
-👆 Auxiliary line for multiple page
-:br
-:br
-:br
+
