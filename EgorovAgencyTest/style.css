@@ -75,7 +75,7 @@ body {
 .container {
     min-height: 100vh;
     margin: 0 auto;
-    padding: 110px 108px 0;
+    padding: 66px 108px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -84,21 +84,33 @@ body {
 }
 
 .fon-left {
-    position: absolute;
+    width: 469px;
+    height: 418px;
     left: 0;
     top: 0;
     z-index: -1;
+    background-image: url(./image/svg/fon-left.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
 }
 
 .fon-right {
-    position: absolute;
+    width: 276px;
+    height: 323px;
     right: 0;
     top: 0;
     z-index: -1;
+    background-image: url(./image/svg/fon-right.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
 }
 
 .content {
-    margin-bottom: 4rem;
+    margin-bottom: -1rem;
 }
 
 .title {
@@ -128,7 +140,7 @@ body {
     align-items: center;
     flex-direction: row;
     gap: 33rem;
-    height: 18vh;
+    height: 20vh;
     width: 100vw;
     background-color: var(--color-dark-xl);
 }
@@ -256,7 +268,6 @@ body {
     background: none;
     font-size: 20px;
     color: var(--color-light-xl);
-    padding-right: 21rem;
 }
 
 .other-btn-img {
@@ -327,7 +338,7 @@ body {
 }
 
 .section-slider{
-    display: none;
+   display: none;
 }
 
 @media (max-width: 1000px) {
@@ -340,16 +351,13 @@ body {
     }
 
     .fon-left {
-        width: 35%;
-        left: -15px;
-        top: -25px;
+        width: 228px;
+        height: 199px;
     }
 
     .fon-right {
-        height: 35%;
-        transform: rotate(-8.9deg);
-        right: -30px;
-        top: -20px;
+        width: 222px;
+        height: 352px;
     }
 
     .container {
@@ -453,16 +461,14 @@ body {
     }
 
     .fon-left {
-        width: 50%;
-        left: -14px;
-        top: -20px;
+        width: 175px;
+        height: 156px;
+        top: -13px;
     }
 
     .fon-right {
-        height: 25%;
-        transform: rotate(-6.9deg);
-        right: -38px;
-        top: -13px;
+        width: 92px;
+        height: 131px;
     }
 
     .container {
