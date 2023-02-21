@@ -15,9 +15,9 @@
         <img src="./image/svg/fon-left.svg" alt="fon left" class="fon-left">
         <img src="./image/svg/fon-right.svg" alt="fon right" class="fon-right">
         <section class="section-main container">
-            <div class="logo">
+            <a class="logo" href="#">
                 <img src="./image/svg/logo.svg" alt="logo">
-            </div>
+            </a>
             <div class="content">
                 <h1 class="title">
                     under construction
@@ -65,16 +65,16 @@
                     <p class="event-title">
                         Check our event page when you wait:
                     </p>
-                    <button class="event-btn">
+                    <a class="event-btn" href="https://egorovagency.by/#main" target="_blank">
                         Go to the event
                         <img src="./image/svg/arrow-right.svg" alt="arrow">
-                    </button>
+                    </a>
                 </div>
             </div>
             <div class="footer">
                 <form class="form">
                     <input type="email" class="form-input" placeholder="Enter your Email and get notified">
-                    <button type="submit" class="form-btn">
+                    <button type="button" class="form-btn">
                         <img src="./image/svg/arrow-right.svg" class="form-btn-img" alt="arrow">
                     </button>
                 </form>
@@ -84,7 +84,27 @@
                 </button>
             </div>
         </section>
-        <section class="section-slider"></section>
+        <section class="modal">
+            <div class="popup-overlay">
+                <div class="popup">
+                    <a class="popup-btn-close">
+                        <img src="./image/svg/close.svg" alt="close">
+                    </a>
+                    <h3 class="popup-name">
+                        success!
+                    </h3>
+                    <p class="popup-description">
+                        You have successfully subscribed to the email newsletter
+                    </p>
+                    <a class="popup-btn">
+                        Close
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section-slider">
+
+        </section>
     </main>
 <script type="module" src="./index.js"></script>
 </body>

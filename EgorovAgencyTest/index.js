@@ -9,11 +9,6 @@ const deadline = new Date(2023, 4, 31);
 // id таймера
 let timerId = null;
 
-// склонение числительных
-//function declensionNum(num, words) {
-//    return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(num % 10 < 5) ? num % 10 : 5]];
-//}
-
 function countdownTimer() {
     const diff = deadline - new Date();
     if (diff <= 0) {
@@ -27,11 +22,44 @@ function countdownTimer() {
     hours.textContent = hoursNum < 10 ? '0' + hoursNum : hoursNum;
     minutes.textContent = minutesNum < 10 ? '0' + minutesNum : minutesNum;
     seconds.textContent = secondsNum < 10 ? '0' + secondsNum : secondsNum;
-    //days.dataset.title = declensionNum(daysDeclension, ['день', 'дня', 'дней']);
-    //hours.dataset.title = declensionNum(hoursDeclension, ['час', 'часа', 'часов']);
-    //minutes.dataset.title = declensionNum(minutesDeclension, ['минута', 'минуты', 'минут']);
-    //seconds.dataset.title = declensionNum(secondsDeclension, ['секунда', 'секунды', 'секунд']);
-  }
+}
 
-  countdownTimer();
-  timerId = setInterval(countdownTimer, 1000);
+countdownTimer();
+timerId = setInterval(countdownTimer, 1000);
+
+//для popup
+const popup = document.querySelector('.popup-overlay');
+const popupBtn = document.querySelector('.popup-btn');
+const popupBtnClose = document.querySelector('.popup-btn-close');
+const formBtn = document.querySelector('.form-btn');
+
+//cоздвние popup
+const addPopup = () => {
+    const name = document.querySelector('.popup-name');
+    const description = document.querySelector('.popup-description');
+    const id = event.currentTarget.dataset.id;
+
+    name.innerHTML = "success";
+    description.innerHTML = "You have successfully subscribed to the email newsletter";
+
+    popup.classList.add('popup-open');
+    body.style.overflow = 'hidden';
+
+}
+
+const closePopup = () => {
+    popup.classList.remove('popup-open');
+    body.style.overflow = '';
+}
+
+formBtn.addEventListener('click', addPopup)
+
+popupBtn.addEventListener('click', closePopup)
+popupBtnClose.addEventListener('click', closePopup)
+
+popup.addEventListener('click', (e) => {
+    if(e.target.classList.contains('popup-open')){
+        popup.classList.remove('popup-open');
+        body.style.overflow = '';
+    }
+})

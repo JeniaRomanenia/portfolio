@@ -23,9 +23,6 @@ html, body{
     font-size: 100%;
     line-height: 1;
     font-size: 14px;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
 }
 
 input,button,textarea{font-family: inherit;}
@@ -34,7 +31,7 @@ input::-ms-clear{display: none;}
 
 input::-ms-clear{display: none;}
 
-button{cursor: pointer;}
+a, button{cursor: pointer;}
 
 button::-moz-focus-inner{padding: 0;border: 0;}
 
@@ -203,6 +200,7 @@ body {
     margin: 0 auto;
     gap: 2rem;
     border-radius: 40px;
+    width: max-content;
     background: var(--color-dark-xl);
     color: var(--color-light-xl);
     padding: 1.4rem 2rem 1.4rem 2.5rem;
@@ -265,6 +263,7 @@ body {
     background: none;
     font-size: 20px;
     color: var(--color-light-xl);
+    padding-right: 21rem;
 }
 
 .other-btn-img {
@@ -272,6 +271,67 @@ body {
     margin-right: 9rem;
 }
 
+/*popup*/
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(22, 44, 78, 0.6);
+    display: none;
+}
+
+.popup-open {
+    display: flex;
+  }
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--color-light-xl);
+    width: 320px;
+    height: 370px;
+    border: 1px solid rgba(19, 89, 120, 0.07);
+    border-radius: 2px;
+    position: fixed;
+    z-index: 2;
+    padding-bottom: 3rem;
+}
+
+.popup-name {
+    font-size: 36px;
+    color: var(--color-dark-xl);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.popup-description {
+    font-size: var(--small-font-size);
+    color: var(--color-dark-s);
+    font-weight: 400;
+    padding: 0 1.2rem;
+    text-align: center;
+}
+
+.popup-btn {
+    border-radius: 40px;
+    background: var(--color-dark-xl);
+    color: var(--color-light-xl);
+    padding: 1.3rem 5rem 1.3rem 6rem;
+    font-size: var(--normal-font-size);
+    line-height: 150%;
+}
+
+.popup-btn-close {
+    align-self: flex-end;
+    padding-right: 1rem;
+}
 
 .section-slider{
     display: none;
