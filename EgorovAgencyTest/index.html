@@ -86,11 +86,12 @@
                 </div>
             </div>
             <div class="footer">
-                <form class="form">
-                    <input type="email" class="form-input" placeholder="Enter your Email and get notified">
-                    <button type="button" class="form-btn">
+                <form class="form" id="form" action="./index.js" method="POST">
+                    <input type="email" name="email" class="form-input" placeholder="Enter your Email and get notified">
+                    <button type="submit" class="form-btn">
                         <img src="./image/svg/arrow-right.svg" class="form-btn-img" alt="arrow">
                     </button>
+                    <div class="loader" id="loader">Отправляем...</div>
                 </form>
             </div>
         </section>
@@ -101,10 +102,8 @@
                         <img src="./image/svg/close.svg" alt="close">
                     </a>
                     <h3 class="popup-name">
-                        success!
                     </h3>
                     <p class="popup-description">
-                        You have successfully subscribed to the email newsletter
                     </p>
                     <a class="popup-btn">
                         Close

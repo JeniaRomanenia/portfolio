@@ -136,6 +136,9 @@ body {
     width: 100vw;
     background-color: var(--color-dark-xl);
 }
+.loader {
+    display: none;
+}
 
 /*timer*/
 .timer {
@@ -294,6 +297,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
 }
+
 
 .popup-description {
     font-size: var(--small-font-size);
