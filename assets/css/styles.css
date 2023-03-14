@@ -1148,7 +1148,7 @@ body.light-theme{
   }
 
   .contact__container{
-    column-gap: 6rem;
+    column-gap: 0rem;
   }
 
   .footer__social-link{
