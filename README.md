@@ -56,15 +56,14 @@ I am sure that my meticulousness, imaginative and analytical thinking will help 
 
 ## Work Experience
 
-### Project Manager  - Freelance  :time[2017 - today]
+### Project Manager  - Freelance  :time[2023 - today]
 
-- Organization and conduct of advertising campaigns
-- Negotiating with customers and participating in tenders
-- Layout of sites according to the layout with Figma, Photoshop
-- Site administration
-- Compilation of the semantic core, SEO site optimization
+- Website development on CMS (Wordpress, Tilda, Ukit)
+- Website development (Html, CSS, JavaScript)
+- Search Engine Optimization (SEO)
+- Filling the site with content
 - Maintaining social networks
-- Creation and maintenance of advertising campaigns in Yandex Direct and Google Ads
+- Creation and maintenance of advertising campaigns in Yandex Direct and Google Adwords
 
 ### Engineer  - Center for ensuring the activities of the education department  :time[2019 - 2021]
 
